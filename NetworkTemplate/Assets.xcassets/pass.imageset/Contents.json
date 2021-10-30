@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "960x614_utilisation-pass-sanitaire-doit-etre-elargie-mercredi-attendre-loi-pourrait-etre-definitivement-votee-vendredi-entree-tous-lieux-loisirs-culture-rasse.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
