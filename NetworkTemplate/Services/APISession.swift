@@ -47,6 +47,13 @@ class APISession: NSObject, NetworkService {
 
 
 extension APISession {
+    func dataTaskPublisherWithProgress(for url: URL) -> AnyPublisher<Either<Progress, (data: Data, response: URLResponse)>, NetworkServiceError> {
+        session.dataTaskPublisherWithProgress(for: url)
+            .mapError { error in
+                self.handleError(error)
+            }
+            .eraseToAnyPublisher()
+    }
     func upload(
         request: URLRequest,
         fileURL: URL
